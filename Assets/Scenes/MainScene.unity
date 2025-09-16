@@ -127,6 +127,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1562084756}
     m_Modifications:
+    - target: {fileID: -9082908730067072585, guid: 4bd6ce2a04036e34bb6c8e306058dc7c, type: 3}
+      propertyPath: value
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 379912698305417361, guid: 4bd6ce2a04036e34bb6c8e306058dc7c, type: 3}
       propertyPath: m_Name
       value: NumberButton (2)
@@ -225,6 +229,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8351008066725298494, guid: 4bd6ce2a04036e34bb6c8e306058dc7c, type: 3}
   m_PrefabInstance: {fileID: 27860291}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &27860293 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -9082908730067072585, guid: 4bd6ce2a04036e34bb6c8e306058dc7c, type: 3}
+  m_PrefabInstance: {fileID: 27860291}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56156077039b85747a00182e72f881b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Calculator.Component.ButtonComponent
 --- !u!1 &59339962
 GameObject:
   m_ObjectHideFlags: 0
@@ -238,7 +253,7 @@ GameObject:
   - component: {fileID: 59339964}
   - component: {fileID: 59339963}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: CalculatorCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -322,7 +337,7 @@ RectTransform:
   - {fileID: 1812821466}
   - {fileID: 1855238835}
   - {fileID: 1154640305}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 289005392}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -337,6 +352,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1562084756}
     m_Modifications:
+    - target: {fileID: -9082908730067072585, guid: 4bd6ce2a04036e34bb6c8e306058dc7c, type: 3}
+      propertyPath: value
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 379912698305417361, guid: 4bd6ce2a04036e34bb6c8e306058dc7c, type: 3}
       propertyPath: m_Name
       value: NumberButton (8)
@@ -435,6 +454,49 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8351008066725298494, guid: 4bd6ce2a04036e34bb6c8e306058dc7c, type: 3}
   m_PrefabInstance: {fileID: 146457855}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &146457857 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -9082908730067072585, guid: 4bd6ce2a04036e34bb6c8e306058dc7c, type: 3}
+  m_PrefabInstance: {fileID: 146457855}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56156077039b85747a00182e72f881b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Calculator.Component.ButtonComponent
+--- !u!1 &289005391
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 289005392}
+  m_Layer: 0
+  m_Name: CANVASES
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &289005392
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 289005391}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 13.0373, y: 925.709, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children:
+  - {fileID: 59339966}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &413689419 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8351008066725298494, guid: 4bd6ce2a04036e34bb6c8e306058dc7c, type: 3}
@@ -570,12 +632,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -13.0373, y: -925.709, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1865901201}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &556895957
 PrefabInstance:
@@ -689,7 +751,8 @@ PrefabInstance:
       propertyPath: m_Interactable
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4309578043619498388, guid: 88cd02d81a28a2447818935aad3fda28, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -776,12 +839,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 619394800}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -13.0373, y: -925.709, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1865901201}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &640971716
 PrefabInstance:
@@ -791,6 +854,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1562084756}
     m_Modifications:
+    - target: {fileID: -9082908730067072585, guid: 4bd6ce2a04036e34bb6c8e306058dc7c, type: 3}
+      propertyPath: value
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 379912698305417361, guid: 4bd6ce2a04036e34bb6c8e306058dc7c, type: 3}
       propertyPath: m_Name
       value: NumberButton (4)
@@ -889,6 +956,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8351008066725298494, guid: 4bd6ce2a04036e34bb6c8e306058dc7c, type: 3}
   m_PrefabInstance: {fileID: 640971716}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &640971718 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -9082908730067072585, guid: 4bd6ce2a04036e34bb6c8e306058dc7c, type: 3}
+  m_PrefabInstance: {fileID: 640971716}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56156077039b85747a00182e72f881b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Calculator.Component.ButtonComponent
 --- !u!1001 &642193065
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -897,6 +975,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1562084756}
     m_Modifications:
+    - target: {fileID: -9082908730067072585, guid: 4bd6ce2a04036e34bb6c8e306058dc7c, type: 3}
+      propertyPath: value
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 379912698305417361, guid: 4bd6ce2a04036e34bb6c8e306058dc7c, type: 3}
       propertyPath: m_Name
       value: NumberButton (3)
@@ -991,6 +1073,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8351008066725298494, guid: 4bd6ce2a04036e34bb6c8e306058dc7c, type: 3}
   m_PrefabInstance: {fileID: 642193065}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &642193067 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -9082908730067072585, guid: 4bd6ce2a04036e34bb6c8e306058dc7c, type: 3}
+  m_PrefabInstance: {fileID: 642193065}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56156077039b85747a00182e72f881b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Calculator.Component.ButtonComponent
 --- !u!1001 &842298768
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1083,6 +1176,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OperationButton (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 4309578043619498388, guid: 88cd02d81a28a2447818935aad3fda28, type: 3}
+      propertyPath: value
+      value: '-'
+      objectReference: {fileID: 0}
     - target: {fileID: 4476873943651492001, guid: 88cd02d81a28a2447818935aad3fda28, type: 3}
       propertyPath: m_text
       value: '-'
@@ -1109,6 +1206,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3148795255856737341, guid: 88cd02d81a28a2447818935aad3fda28, type: 3}
   m_PrefabInstance: {fileID: 842298768}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &842298770 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4309578043619498388, guid: 88cd02d81a28a2447818935aad3fda28, type: 3}
+  m_PrefabInstance: {fileID: 842298768}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56156077039b85747a00182e72f881b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Calculator.Component.ButtonComponent
 --- !u!1001 &867617376
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1117,6 +1225,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1562084756}
     m_Modifications:
+    - target: {fileID: -9082908730067072585, guid: 4bd6ce2a04036e34bb6c8e306058dc7c, type: 3}
+      propertyPath: value
+      value: .
+      objectReference: {fileID: 0}
     - target: {fileID: 379912698305417361, guid: 4bd6ce2a04036e34bb6c8e306058dc7c, type: 3}
       propertyPath: m_Name
       value: NumberButton (11)
@@ -1215,6 +1327,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8351008066725298494, guid: 4bd6ce2a04036e34bb6c8e306058dc7c, type: 3}
   m_PrefabInstance: {fileID: 867617376}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &867617378 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -9082908730067072585, guid: 4bd6ce2a04036e34bb6c8e306058dc7c, type: 3}
+  m_PrefabInstance: {fileID: 867617376}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56156077039b85747a00182e72f881b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Calculator.Component.ButtonComponent
 --- !u!1001 &869245939
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1307,6 +1430,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: OperationButton (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 4309578043619498388, guid: 88cd02d81a28a2447818935aad3fda28, type: 3}
+      propertyPath: type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4309578043619498388, guid: 88cd02d81a28a2447818935aad3fda28, type: 3}
+      propertyPath: value
+      value: =
+      objectReference: {fileID: 0}
     - target: {fileID: 4476873943651492001, guid: 88cd02d81a28a2447818935aad3fda28, type: 3}
       propertyPath: m_text
       value: =
@@ -1333,6 +1464,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3148795255856737341, guid: 88cd02d81a28a2447818935aad3fda28, type: 3}
   m_PrefabInstance: {fileID: 869245939}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &869245941 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4309578043619498388, guid: 88cd02d81a28a2447818935aad3fda28, type: 3}
+  m_PrefabInstance: {fileID: 869245939}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56156077039b85747a00182e72f881b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Calculator.Component.ButtonComponent
 --- !u!1001 &910893803
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1341,6 +1483,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1562084756}
     m_Modifications:
+    - target: {fileID: -9082908730067072585, guid: 4bd6ce2a04036e34bb6c8e306058dc7c, type: 3}
+      propertyPath: value
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 379912698305417361, guid: 4bd6ce2a04036e34bb6c8e306058dc7c, type: 3}
       propertyPath: m_Name
       value: NumberButton (1)
@@ -1439,6 +1585,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8351008066725298494, guid: 4bd6ce2a04036e34bb6c8e306058dc7c, type: 3}
   m_PrefabInstance: {fileID: 910893803}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &910893805 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -9082908730067072585, guid: 4bd6ce2a04036e34bb6c8e306058dc7c, type: 3}
+  m_PrefabInstance: {fileID: 910893803}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56156077039b85747a00182e72f881b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Calculator.Component.ButtonComponent
 --- !u!1001 &927987700
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1447,6 +1604,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1562084756}
     m_Modifications:
+    - target: {fileID: -9082908730067072585, guid: 4bd6ce2a04036e34bb6c8e306058dc7c, type: 3}
+      propertyPath: value
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 379912698305417361, guid: 4bd6ce2a04036e34bb6c8e306058dc7c, type: 3}
       propertyPath: m_Name
       value: NumberButton (7)
@@ -1545,6 +1706,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8351008066725298494, guid: 4bd6ce2a04036e34bb6c8e306058dc7c, type: 3}
   m_PrefabInstance: {fileID: 927987700}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &927987702 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -9082908730067072585, guid: 4bd6ce2a04036e34bb6c8e306058dc7c, type: 3}
+  m_PrefabInstance: {fileID: 927987700}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56156077039b85747a00182e72f881b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Calculator.Component.ButtonComponent
 --- !u!1001 &932809324
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1553,6 +1725,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1562084756}
     m_Modifications:
+    - target: {fileID: -9082908730067072585, guid: 4bd6ce2a04036e34bb6c8e306058dc7c, type: 3}
+      propertyPath: value
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 379912698305417361, guid: 4bd6ce2a04036e34bb6c8e306058dc7c, type: 3}
       propertyPath: m_Name
       value: NumberButton (5)
@@ -1651,6 +1827,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8351008066725298494, guid: 4bd6ce2a04036e34bb6c8e306058dc7c, type: 3}
   m_PrefabInstance: {fileID: 932809324}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &932809326 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -9082908730067072585, guid: 4bd6ce2a04036e34bb6c8e306058dc7c, type: 3}
+  m_PrefabInstance: {fileID: 932809324}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56156077039b85747a00182e72f881b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Calculator.Component.ButtonComponent
 --- !u!1001 &1129541601
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1659,6 +1846,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1562084756}
     m_Modifications:
+    - target: {fileID: -9082908730067072585, guid: 4bd6ce2a04036e34bb6c8e306058dc7c, type: 3}
+      propertyPath: value
+      value: 00
+      objectReference: {fileID: 0}
     - target: {fileID: 379912698305417361, guid: 4bd6ce2a04036e34bb6c8e306058dc7c, type: 3}
       propertyPath: m_Name
       value: NumberButton (9)
@@ -1757,6 +1948,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8351008066725298494, guid: 4bd6ce2a04036e34bb6c8e306058dc7c, type: 3}
   m_PrefabInstance: {fileID: 1129541601}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1129541603 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -9082908730067072585, guid: 4bd6ce2a04036e34bb6c8e306058dc7c, type: 3}
+  m_PrefabInstance: {fileID: 1129541601}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56156077039b85747a00182e72f881b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Calculator.Component.ButtonComponent
 --- !u!1 &1154640304
 GameObject:
   m_ObjectHideFlags: 0
@@ -1885,6 +2087,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OperationButton (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4309578043619498388, guid: 88cd02d81a28a2447818935aad3fda28, type: 3}
+      propertyPath: value
+      value: "\xF7"
+      objectReference: {fileID: 0}
     - target: {fileID: 4476873943651492001, guid: 88cd02d81a28a2447818935aad3fda28, type: 3}
       propertyPath: m_text
       value: "\xF7"
@@ -1910,6 +2116,155 @@ PrefabInstance:
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3148795255856737341, guid: 88cd02d81a28a2447818935aad3fda28, type: 3}
   m_PrefabInstance: {fileID: 1181879415}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1181879417 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4309578043619498388, guid: 88cd02d81a28a2447818935aad3fda28, type: 3}
+  m_PrefabInstance: {fileID: 1181879415}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56156077039b85747a00182e72f881b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Calculator.Component.ButtonComponent
+--- !u!1001 &1351991588
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2072010729}
+    m_Modifications:
+    - target: {fileID: 1403924120624326922, guid: fd66ae79b710193499ff4cdbc2e569f0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1403924120624326922, guid: fd66ae79b710193499ff4cdbc2e569f0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1403924120624326922, guid: fd66ae79b710193499ff4cdbc2e569f0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1403924120624326922, guid: fd66ae79b710193499ff4cdbc2e569f0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1403924120624326922, guid: fd66ae79b710193499ff4cdbc2e569f0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1403924120624326922, guid: fd66ae79b710193499ff4cdbc2e569f0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1403924120624326922, guid: fd66ae79b710193499ff4cdbc2e569f0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1403924120624326922, guid: fd66ae79b710193499ff4cdbc2e569f0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1403924120624326922, guid: fd66ae79b710193499ff4cdbc2e569f0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1403924120624326922, guid: fd66ae79b710193499ff4cdbc2e569f0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3206793957486851309, guid: fd66ae79b710193499ff4cdbc2e569f0, type: 3}
+      propertyPath: inputText
+      value: 
+      objectReference: {fileID: 1716766652}
+    - target: {fileID: 3206793957486851309, guid: fd66ae79b710193499ff4cdbc2e569f0, type: 3}
+      propertyPath: 'buttonComponentsArray.Array.data[0]'
+      value: 
+      objectReference: {fileID: 6326675075924895061}
+    - target: {fileID: 3206793957486851309, guid: fd66ae79b710193499ff4cdbc2e569f0, type: 3}
+      propertyPath: 'buttonComponentsArray.Array.data[1]'
+      value: 
+      objectReference: {fileID: 1181879417}
+    - target: {fileID: 3206793957486851309, guid: fd66ae79b710193499ff4cdbc2e569f0, type: 3}
+      propertyPath: 'buttonComponentsArray.Array.data[2]'
+      value: 
+      objectReference: {fileID: 125189336428455281}
+    - target: {fileID: 3206793957486851309, guid: fd66ae79b710193499ff4cdbc2e569f0, type: 3}
+      propertyPath: 'buttonComponentsArray.Array.data[3]'
+      value: 
+      objectReference: {fileID: 910893805}
+    - target: {fileID: 3206793957486851309, guid: fd66ae79b710193499ff4cdbc2e569f0, type: 3}
+      propertyPath: 'buttonComponentsArray.Array.data[4]'
+      value: 
+      objectReference: {fileID: 27860293}
+    - target: {fileID: 3206793957486851309, guid: fd66ae79b710193499ff4cdbc2e569f0, type: 3}
+      propertyPath: 'buttonComponentsArray.Array.data[5]'
+      value: 
+      objectReference: {fileID: 1926414020}
+    - target: {fileID: 3206793957486851309, guid: fd66ae79b710193499ff4cdbc2e569f0, type: 3}
+      propertyPath: 'buttonComponentsArray.Array.data[6]'
+      value: 
+      objectReference: {fileID: 642193067}
+    - target: {fileID: 3206793957486851309, guid: fd66ae79b710193499ff4cdbc2e569f0, type: 3}
+      propertyPath: 'buttonComponentsArray.Array.data[7]'
+      value: 
+      objectReference: {fileID: 640971718}
+    - target: {fileID: 3206793957486851309, guid: fd66ae79b710193499ff4cdbc2e569f0, type: 3}
+      propertyPath: 'buttonComponentsArray.Array.data[8]'
+      value: 
+      objectReference: {fileID: 932809326}
+    - target: {fileID: 3206793957486851309, guid: fd66ae79b710193499ff4cdbc2e569f0, type: 3}
+      propertyPath: 'buttonComponentsArray.Array.data[9]'
+      value: 
+      objectReference: {fileID: 842298770}
+    - target: {fileID: 3206793957486851309, guid: fd66ae79b710193499ff4cdbc2e569f0, type: 3}
+      propertyPath: 'buttonComponentsArray.Array.data[10]'
+      value: 
+      objectReference: {fileID: 1580204846}
+    - target: {fileID: 3206793957486851309, guid: fd66ae79b710193499ff4cdbc2e569f0, type: 3}
+      propertyPath: 'buttonComponentsArray.Array.data[11]'
+      value: 
+      objectReference: {fileID: 927987702}
+    - target: {fileID: 3206793957486851309, guid: fd66ae79b710193499ff4cdbc2e569f0, type: 3}
+      propertyPath: 'buttonComponentsArray.Array.data[12]'
+      value: 
+      objectReference: {fileID: 146457857}
+    - target: {fileID: 3206793957486851309, guid: fd66ae79b710193499ff4cdbc2e569f0, type: 3}
+      propertyPath: 'buttonComponentsArray.Array.data[13]'
+      value: 
+      objectReference: {fileID: 1696799600}
+    - target: {fileID: 3206793957486851309, guid: fd66ae79b710193499ff4cdbc2e569f0, type: 3}
+      propertyPath: 'buttonComponentsArray.Array.data[14]'
+      value: 
+      objectReference: {fileID: 1129541603}
+    - target: {fileID: 3206793957486851309, guid: fd66ae79b710193499ff4cdbc2e569f0, type: 3}
+      propertyPath: 'buttonComponentsArray.Array.data[15]'
+      value: 
+      objectReference: {fileID: 1786312981}
+    - target: {fileID: 3206793957486851309, guid: fd66ae79b710193499ff4cdbc2e569f0, type: 3}
+      propertyPath: 'buttonComponentsArray.Array.data[16]'
+      value: 
+      objectReference: {fileID: 867617378}
+    - target: {fileID: 3206793957486851309, guid: fd66ae79b710193499ff4cdbc2e569f0, type: 3}
+      propertyPath: 'buttonComponentsArray.Array.data[17]'
+      value: 
+      objectReference: {fileID: 869245941}
+    - target: {fileID: 4296003453318611773, guid: fd66ae79b710193499ff4cdbc2e569f0, type: 3}
+      propertyPath: m_Name
+      value: GameSystem
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fd66ae79b710193499ff4cdbc2e569f0, type: 3}
+--- !u!4 &1351991589 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1403924120624326922, guid: fd66ae79b710193499ff4cdbc2e569f0, type: 3}
+  m_PrefabInstance: {fileID: 1351991588}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1562084755
 GameObject:
@@ -1999,6 +2354,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1562084756}
     m_Modifications:
+    - target: {fileID: -9082908730067072585, guid: 4bd6ce2a04036e34bb6c8e306058dc7c, type: 3}
+      propertyPath: value
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 379912698305417361, guid: 4bd6ce2a04036e34bb6c8e306058dc7c, type: 3}
       propertyPath: m_Name
       value: NumberButton (6)
@@ -2097,6 +2456,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8351008066725298494, guid: 4bd6ce2a04036e34bb6c8e306058dc7c, type: 3}
   m_PrefabInstance: {fileID: 1580204844}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1580204846 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -9082908730067072585, guid: 4bd6ce2a04036e34bb6c8e306058dc7c, type: 3}
+  m_PrefabInstance: {fileID: 1580204844}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56156077039b85747a00182e72f881b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Calculator.Component.ButtonComponent
 --- !u!1001 &1696799598
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2189,6 +2559,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OperationButton (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 4309578043619498388, guid: 88cd02d81a28a2447818935aad3fda28, type: 3}
+      propertyPath: value
+      value: +
+      objectReference: {fileID: 0}
     - target: {fileID: 4476873943651492001, guid: 88cd02d81a28a2447818935aad3fda28, type: 3}
       propertyPath: m_text
       value: +
@@ -2215,6 +2589,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3148795255856737341, guid: 88cd02d81a28a2447818935aad3fda28, type: 3}
   m_PrefabInstance: {fileID: 1696799598}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1696799600 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4309578043619498388, guid: 88cd02d81a28a2447818935aad3fda28, type: 3}
+  m_PrefabInstance: {fileID: 1696799598}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56156077039b85747a00182e72f881b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Calculator.Component.ButtonComponent
 --- !u!1 &1716766650
 GameObject:
   m_ObjectHideFlags: 0
@@ -2303,7 +2688,7 @@ MonoBehaviour:
   m_fontSizeBase: 120
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 18
+  m_fontSizeMin: 64
   m_fontSizeMax: 120
   m_fontStyle: 0
   m_HorizontalAlignment: 4
@@ -2463,7 +2848,8 @@ PrefabInstance:
       propertyPath: m_Interactable
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4309578043619498388, guid: 88cd02d81a28a2447818935aad3fda28, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2481,6 +2867,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1562084756}
     m_Modifications:
+    - target: {fileID: -9082908730067072585, guid: 4bd6ce2a04036e34bb6c8e306058dc7c, type: 3}
+      propertyPath: value
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 379912698305417361, guid: 4bd6ce2a04036e34bb6c8e306058dc7c, type: 3}
       propertyPath: m_Name
       value: NumberButton (10)
@@ -2579,6 +2969,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8351008066725298494, guid: 4bd6ce2a04036e34bb6c8e306058dc7c, type: 3}
   m_PrefabInstance: {fileID: 1786312979}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1786312981 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -9082908730067072585, guid: 4bd6ce2a04036e34bb6c8e306058dc7c, type: 3}
+  m_PrefabInstance: {fileID: 1786312979}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56156077039b85747a00182e72f881b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Calculator.Component.ButtonComponent
 --- !u!1 &1812821465
 GameObject:
   m_ObjectHideFlags: 0
@@ -2690,6 +3091,40 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 660}
   m_SizeDelta: {x: 1080, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1865901200
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1865901201}
+  m_Layer: 0
+  m_Name: SCENE
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1865901201
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1865901200}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 13.0373, y: 925.709, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children:
+  - {fileID: 519420032}
+  - {fileID: 619394802}
+  - {fileID: 2030137081}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1926414018
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2782,6 +3217,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OperationButton (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 4309578043619498388, guid: 88cd02d81a28a2447818935aad3fda28, type: 3}
+      propertyPath: value
+      value: "\xD7"
+      objectReference: {fileID: 0}
     - target: {fileID: 4476873943651492001, guid: 88cd02d81a28a2447818935aad3fda28, type: 3}
       propertyPath: m_text
       value: "\xD7"
@@ -2808,6 +3247,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3148795255856737341, guid: 88cd02d81a28a2447818935aad3fda28, type: 3}
   m_PrefabInstance: {fileID: 1926414018}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1926414020 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4309578043619498388, guid: 88cd02d81a28a2447818935aad3fda28, type: 3}
+  m_PrefabInstance: {fileID: 1926414018}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56156077039b85747a00182e72f881b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Calculator.Component.ButtonComponent
 --- !u!1 &2030137078
 GameObject:
   m_ObjectHideFlags: 0
@@ -2880,11 +3330,43 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2030137078}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -13.0373, y: -925.709, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
+  m_Father: {fileID: 1865901201}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2072010728
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2072010729}
+  m_Layer: 0
+  m_Name: SYTSTEMS
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2072010729
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2072010728}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 13.0373, y: 925.709, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children:
+  - {fileID: 1351991589}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &125189336428455280
@@ -2895,6 +3377,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1562084756}
     m_Modifications:
+    - target: {fileID: -9082908730067072585, guid: 4bd6ce2a04036e34bb6c8e306058dc7c, type: 3}
+      propertyPath: value
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 379912698305417361, guid: 4bd6ce2a04036e34bb6c8e306058dc7c, type: 3}
       propertyPath: m_Name
       value: NumberButton
@@ -2988,6 +3474,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4bd6ce2a04036e34bb6c8e306058dc7c, type: 3}
+--- !u!114 &125189336428455281 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -9082908730067072585, guid: 4bd6ce2a04036e34bb6c8e306058dc7c, type: 3}
+  m_PrefabInstance: {fileID: 125189336428455280}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56156077039b85747a00182e72f881b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Calculator.Component.ButtonComponent
 --- !u!1001 &6326675075924895060
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3080,6 +3577,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: OperationButton
       objectReference: {fileID: 0}
+    - target: {fileID: 4309578043619498388, guid: 88cd02d81a28a2447818935aad3fda28, type: 3}
+      propertyPath: type
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4309578043619498388, guid: 88cd02d81a28a2447818935aad3fda28, type: 3}
+      propertyPath: value
+      value: AC
+      objectReference: {fileID: 0}
     - target: {fileID: 4476873943651492001, guid: 88cd02d81a28a2447818935aad3fda28, type: 3}
       propertyPath: m_text
       value: AC
@@ -3109,6 +3614,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88cd02d81a28a2447818935aad3fda28, type: 3}
+--- !u!114 &6326675075924895061 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4309578043619498388, guid: 88cd02d81a28a2447818935aad3fda28, type: 3}
+  m_PrefabInstance: {fileID: 6326675075924895060}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56156077039b85747a00182e72f881b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Calculator.Component.ButtonComponent
 --- !u!224 &8351008065547999377 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3148795255856737341, guid: 88cd02d81a28a2447818935aad3fda28, type: 3}
@@ -3118,7 +3634,6 @@ RectTransform:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 519420032}
-  - {fileID: 619394802}
-  - {fileID: 59339966}
-  - {fileID: 2030137081}
+  - {fileID: 1865901201}
+  - {fileID: 289005392}
+  - {fileID: 2072010729}
