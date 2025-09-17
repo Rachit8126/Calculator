@@ -1,6 +1,8 @@
 using Calculator.Model;
 using Common;
 using System.Collections.Generic;
+using System.Linq;
+using UnityEngine;
 using Utils;
 
 namespace Calculator.Controller
@@ -35,6 +37,12 @@ namespace Calculator.Controller
             Stack<string> operationStack = new();
 
             string number = "";
+
+            if (expression[0] == '-')
+            {
+                number += '-';
+                expression = expression[1..];
+            }
 
             foreach (var character in expression)
             {
@@ -137,13 +145,18 @@ namespace Calculator.Controller
         {
             Queue<string> postfixQueue = ConvertToPostfixExpression(expression);
 
+            for (int i = 0; i < postfixQueue.Count; i++)
+            {
+                LoggerUtility.LogInEditor(postfixQueue.ElementAt(i), Color.cyan);
+            }
+
             Stack<string> tempStack = new();
 
             while (postfixQueue.Count > 0)
             {
                 string value = postfixQueue.Dequeue();
 
-                if (IsOperator(value[0]))
+                if (value.Length == 1 && IsOperator(value[0]))
                 {
                     string second = tempStack.Pop();
                     string first = tempStack.Pop();

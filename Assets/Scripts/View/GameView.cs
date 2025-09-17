@@ -75,14 +75,23 @@ namespace Calculator.View
                 return;
             }
 
-            if (inputText.text.Length == 1 && inputText.text[0] == '0')
+            if (inputText.text.Length == 1 && (inputText.text[0] == '0' || inputText.text[0] == '-'))
             {
+                if (value == '-')
+                {
+                    inputText.text = value.ToString();
+                    return;
+                }
+
                 if (GetController<GameController>().IsOperator(value))
                 {
                     return;
                 }
 
-                inputText.text = "";
+                if (!(inputText.text[0] == '-'))
+                {
+                    inputText.text = "";
+                }
             }
 
             if (inputText.text.Length > 1 &&
