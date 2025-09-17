@@ -102,7 +102,7 @@ namespace Calculator.Controller
                 case '÷':
                     if (b == 0)
                     {
-                        result = "Error";
+                        result = GameModel.DivisionByZeroString;
                     }
                     else
                     {
@@ -153,7 +153,14 @@ namespace Calculator.Controller
                     float a = float.Parse(first);
                     float b = float.Parse(second);
 
-                    tempStack.Push(ApplyOperator(a, b, value[0]));
+                    string result = ApplyOperator(a, b, value[0]);
+
+                    if (result == GameModel.DivisionByZeroString)
+                    {
+                        return result;
+                    }
+
+                    tempStack.Push(result);
                     continue;
                 }
                 else

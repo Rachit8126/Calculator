@@ -11,6 +11,8 @@ namespace Calculator.Model
             { '×', 2 },
             { '÷', 2 }
         };
+
+        internal static readonly string DivisionByZeroString = "Undefined";
     }
 
     public enum ButtonType
