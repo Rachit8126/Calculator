@@ -1,7 +1,7 @@
 using Calculator.Component;
+using Calculator.Controller;
 using Calculator.Model;
 using Common;
-using System;
 using TMPro;
 using UnityEngine;
 using Utils;
@@ -25,10 +25,10 @@ namespace Calculator.View
         #region Private Methods
         private void Clear()
         {
-            inputText.text = "";
+            inputText.text = "0";
         }
 
-        private void OnButtonPressed(ButtonType type, string value)
+        private void OnButtonPressed(ButtonType type, char value)
         {
             LoggerUtility.LogInEditor($"{type} pressed with value {value}", Color.green);
 
@@ -51,26 +51,45 @@ namespace Calculator.View
             }
         }
 
-        private void OnOperationButtonPressed(string value)
+        private void OnOperationButtonPressed(char value)
         {
             UpdateText(value);
         }
 
-        private void OnNumberButtonPressed(string value)
+        private void OnNumberButtonPressed(char value)
         {
             UpdateText(value);
         }
 
         private void OnEqualsPressed()
         {
-            throw new NotImplementedException();
+            string expression = inputText.text;
+            string result = GetController<GameController>().EvaluateExpression(expression);
+            inputText.text = result;
         }
 
-        private void UpdateText(string value)
+        private void UpdateText(char value)
         {
             if (inputText.text.Length > maxInputLength)
             {
                 return;
+            }
+
+            if (inputText.text.Length == 1 && inputText.text[0] == '0')
+            {
+                if (GetController<GameController>().IsOperator(value))
+                {
+                    return;
+                }
+
+                inputText.text = "";
+            }
+
+            if (inputText.text.Length > 1 &&
+                GetController<GameController>().IsOperator(inputText.text[^1]) &&
+                GetController<GameController>().IsOperator(value))
+            {
+                inputText.text = inputText.text[..^1];
             }
 
             inputText.text += value;

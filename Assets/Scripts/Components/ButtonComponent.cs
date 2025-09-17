@@ -12,11 +12,11 @@ namespace Calculator.Component
         [SerializeField] private ButtonType type;
         [SerializeField] private Button button;
         [SerializeField] private TextMeshProUGUI buttonText;
-        [SerializeField] private string value;
+        [SerializeField] private char value;
         #endregion Inspector Variables
 
         #region Public Variables
-        public event Action<ButtonType, string> OnButtonPressed;
+        public event Action<ButtonType, char> OnButtonPressed;
         #endregion Public Variables
 
         #region Private Variables
@@ -25,8 +25,6 @@ namespace Calculator.Component
         #region Monobehaviour Methods
         private void Start()
         {
-            buttonText.text = value;
-
             button.onClick.AddListener(() =>
             {
                 OnButtonPressed?.Invoke(type, value);
@@ -38,15 +36,6 @@ namespace Calculator.Component
         #endregion Private Methods
 
         #region Public Methods
-        internal ButtonType GetButtonType()
-        {
-            return type;
-        }
-
-        internal string GetButtonValue()
-        {
-            return value;
-        }
         #endregion Public Methods
     }
 }
