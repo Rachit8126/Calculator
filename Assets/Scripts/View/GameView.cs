@@ -83,6 +83,14 @@ namespace Calculator.View
         private void OnEqualsPressed()
         {
             string expression = inputText.text;
+
+            // If the last character is an operator, remove it
+            if (GetController<GameController>().IsOperator(expression[^1]))
+            {
+                expression = expression[..^1];
+                inputText.text = expression;
+            }
+
             string result = GetController<GameController>().EvaluateExpression(expression);
             inputText.text = result;
         }
